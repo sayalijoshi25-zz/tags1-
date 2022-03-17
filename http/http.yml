@@ -5,6 +5,7 @@
   
   - name: ping
     ping:
+    tags: ping 
 
   - name: Install apache packages
     yum:
