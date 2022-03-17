@@ -2,6 +2,10 @@
 - name: This sets up an httpd webserver
   hosts: localhost
   tasks:
+  
+  - name: ping
+    ping:
+
   - name: Install apache packages
     yum:
       name: httpd
