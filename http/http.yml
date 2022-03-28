@@ -6,14 +6,8 @@
   - name: ping
     ping:
     tags: ping 
-
-  - name: Install apache packages
-    yum:
-      name: httpd
-      state: present
-    tags: install
-
-  - name: ensure httpd is running
-    service:
-      name: httpd
-      state: started
+  
+  - name: Print message
+    debug:
+      msg: Hello Ansible World
+    tags: msg  
