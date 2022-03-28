@@ -12,6 +12,7 @@
       name: httpd
       state: present
     tags: install
+
   - name: ensure httpd is running
     service:
       name: httpd
